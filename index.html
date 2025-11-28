@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Sans:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Sans:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Sans:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Momo+Trust+Sans:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Italianno&family=Momo+Trust+Sans:wght@200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        .highlight {
+            font-weight: 600;
+            color: #e6c988;
+            letter-spacing: 1px;
+
+
+        }
+
+        .glass-subtitle {
+            position: absolute;
+            top: 350px;
+            left: 490px;
+            font-size: 30px;
+            color: #f5f3f0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(218, 221, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6,
+
+                );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 0 0 12px rgba(252, 213, 87, 0.8),
+                0 0 30px rgba(240, 200, 120, 0.6);
+            animation: goldMove 6s linear infinite;
+            ;
+        }
+
+        .home-icon {
+            color: rgb(18, 16, 16);
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
+            gap: 25px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 490px;
+            left: 640px;
+        }
+
+        .home-icon a i {
+            font-size: 50px;
+            color: #d8b36b;
+        }
+
+        .home-icon a:hover {
+            transform: scale(1.2);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(218, 221, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 0 0 1px rgba(252, 213, 87, 0.8),
+                0 0 20px rgba(240, 200, 120, 0.6);
+            animation: goldMove 6s linear infinite;
+            ;
+        }
+
+
+
+        #about h2 {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 90px;
+            padding-left: 160px;
+            font-size: 60px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(221, 191, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            color: transparent;
+
+
+
+        }
+
+        #about h2 span {
+            display: inline-block;
+            border-bottom: 3px solid #d8b36b;
+            padding-bottom: 15px;
+            animation: fadeSlide 2s ease forwards;
+
+        }
+
+        .text {
+            font-family: 'Poppins', 'Arial', sans-serif;
+            padding-left: 160px;
+            padding-right: 160px;
+            line-height: 1.7;
+            font-weight: 600;
+            font-size: 25px;
+            font-family: "Inter", sans-serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(218, 221, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 0 0 1px rgba(252, 213, 87, 0.8),
+                0 0 20px rgba(240, 200, 120, 0.6);
+
+        }
+
+        .animation {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fladeslide 2s ease forwards;
+        }
+
+        @keyframes fladeslide {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+
+            }
+
+            100% {
+                opacity: 1.0;
+                transform: translateY(30px);
+            }
+        }
+
+        .skills h3 {
+
+            text-align: center;
+            margin-bottom: 80px;
+
+            padding-top: 100px;
+            font-family: 'Momo Trust Sans';
+            font-size: 35px;
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            letter-spacing: 3px;
+
+        }
+
+        .skills .container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 140px;
+            height: 180px;
+            border: 4px solid #dccf83;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background: #0B0D16 0%,
+                #1A2033 40%,
+                #242B45 70%,
+                #4B3A52 100%;
+            backdrop-filter: blur(2px);
+            box-shadow: 0 0 15px #ffd700, 0 0 25px #ffd700, 0 0 35 #f5c242;
+            position: relative;
+        }
+
+        .card img {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .card:hover {
+            transform: scale(1.2);
+            box-shadow: 4px 4px 15px rgba(218, 153, 61, 0.7);
+        }
+
+        .softskills {
+            margin-bottom: 80px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            text-align: center;
+            padding-top: 70px;
+            font-family: 'Momo Trust Sans';
+            font-size: 35px;
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            letter-spacing: 3px;
+
+        }
+
+        .card-title {
+            position: absolute;
+            top: 150px;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            width: 90%;
+            word-wrap: break-word;
+
+
+        }
+
+        p.card-title {
+            top: 122px;
+        }
+
+        .softskills .new-container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        .new-card p {
+            display: flex;
+            color: white;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: italic;
+            padding-bottom: 20px;
+            font-weight: 600;
+            background: linear-gradient(90deg,
+                    #4A00E0,
+                    #c4e22d,
+                    #FF6EC4,
+                    #48C6EF,
+                    #6F86D6);
+            background-size: 400% 400%;
+            animation: galaxyMove 8s ease infinite;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 50px;
+        }
+
+        @keyframes galaxyMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .new-card {
+            width: 190px;
+            height: 200px;
+            border: 4px solid #dccf83;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .new-card img {
+            padding-top: 50px;
+            width: 140px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        p.time {
+            margin-top: -5px;
+            font-size: 31px;
+        }
+
+        .new-card img {
+            padding-top: 70px;
+            width: 140px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        p.time1 {
+            font-size: 26px;
+            margin-top: -5px;
+        }
+
+        p.time2 {
+            font-size: 27px;
+        }
+
+        p.time3 {
+            font-size: 30px;
+        }
+
+        p.time5 {
+            bottom: 0;
+            font-size: 30px;
+        }
+
+        .new-card:hover {
+            transform: scale(1.2);
+            box-shadow: 4px 4px 15px rgba(218, 153, 61, 0.7);
+
+        }
+
+        #projects h2 {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 90px;
+            padding-left: 160px;
+            font-size: 60px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(221, 191, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            color: transparent;
+
+
+
+        }
+
+        #projects h2 span {
+            display: inline-block;
+            border-bottom: 3px solid #d8b36b;
+            padding-bottom: 15px;
+            animation: fadeSlide 2s ease forwards;
+            padding-top: 60px;
+
+        }
+
+        .lebanonproject {
+
+            text-align: center;
+            margin-bottom: 80px;
+
+            padding-top: 120px;
+            font-family: 'Momo Trust Sans';
+            font-size: 35px;
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            letter-spacing: 3px;
+
+
+        }
+
+.put-new-projects .new-projectcontainer{
+     display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+
+}
+.new-projectcontainer img{
+    width:400px;
+    height: 350px;
+    border-style: double;
+    border: 5px solid #be9645;
+}
+.new-projectcontainer card{
+  
+}
+    </style>
+    <div class="background">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="glass-container">
+            <h1 class="glass-name">HODA</h1>
+        </div>
+        <p class="glass-subtitle">A Front-End <span class="highlight">Web Developer</span> with a dream</p>
+    </div>
+
+
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
+
+    <div class="home-icon">
+        <a href="hodanshawy2009@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/hoda-nshawy-752a5a37b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            targert="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/hoda2009" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+    </div>
+    <section id="about">
+        <div class="animation">
+            <h2 class="about"><span>About me :</span></h2>
+            <!--i add span to wrap only the text ,it doesntinclude the h2 padding-->
+            <p class="text">
+                Hello! I'm Hoda ,a dreamer with a curious heart. I love exploring new ideas<br>creating
+                beautiful things,and discovering the magic in everyday moments.<br>
+                I give my time and energy fully to the things i care about , building
+                meaningful <br> projects and leave a little sparkle in the world .like a quiet star lighting the night
+                .<br>
+                Life excites me with its endless possibilites,and i strive to grow ,learn,and make every moment count .
+            </p>
+        </div>
+        </div>
+        </div>
+        <div class="skills">
+            <h3>Technical Skills</h3>
+            <div class="container">
+                <div class="card">
+                    <img src="./assets/Python (1).png" alt="python">
+                    <p class="card-title">Python</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/HTML5.png" alt="Html">
+                    <p class="card-title">HTML</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/CSS3.png" alt="css">
+                    <p class="card-title">CSS</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/JavaScript.png" alt="js">
+                    <p class="card-title">JavaScript</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/project_5956592.png" alt="project management">
+                    <p class="card-title">ProjectManagement</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="softskills">
+            <h3 class="softskills">Soft Skills </h3>
+            <div class="new-container">
+                <div class="new-card">
+                    <img src="./assets/leadership.png" alt="leadership">
+                    <p>leadership</p>
+                </div>
+
+                <div class="new-card">
+                    <img src="./assets/time-management.png" alt="timemanagement">
+                    <p class="time">Time Management</p>
+                </div>
+
+                <div class="new-card">
+                    <img src="./assets/problem-solving.png" alt="problem-solving">
+                    <p class="time">problem solving</p>
+                </div>
+
+                <div class="new-card">
+                    <img src="./assets/interaction_17366605.png" alt="effective communication">
+                    <p class="time1">Effective Communication</p>
+                </div>
+
+                <div class="new-card">
+                    <img src="./assets/writing_16815667.png" alt="note taking">
+                    <p class="time3">Note taking</p>
+                </div>
+
+                <div class="new-card">
+                    <img src="./assets/adaptation_18224769.png" alt="adaptability">
+                    <p class="time5">Adaptability</p>
+                </div>
+
+                <div class="new-card">
+                    <img src="./assets/administrative.png" alt="Administrative ">
+                    <p class="time2">Administrative </p>
+                </div>
+                <div class="new-card">
+                    <img src="./assets/search_6370300.png" alt="Curiosity">
+                    <p class="time2">Curiosity</p>
+                </div>
+
+    </section>
+    <section id="quote">
+        <div class="quote-container">
+            <p class="quote-text">" Curiosity lights the path,creativity shapes the world,and every step taken <br>
+                builds bridges between dreams and reality.With every question asked and every<br>
+                idea imagined,the journey becomes a masterpiece.We learn we explore,and we become<br>
+                the art of our own lives "</p>
+            <h6 class="quote-author">Hoda Nshawy</h6>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="projects"><span>My Projects :</span></h2>
+        <div class="project-carousel">
+
+            <img src="./assets/Screenshot -project-Guide to my country.png" class="center" alt="slide1">
+            <img src="./assets/Screenshot-Guide to my country -Nature.png" class="left1" alt="slide2">
+            <img src="./assets/Screenshot-Guide to my country -Nature2.png" class="left2" alt="slide3">
+
+            <img src="./assets/Screenshot-Guide to my country -culture.png" class="right1" alt="slide4">
+
+            <img src="./assets/Screenshot-Guide to my country -culture2.png" class="right3" alt="slide5">
+
+            <img src="./assets/Screenshot-Guide to my country -Food.png" class="right2" alt="slide6">
+
+            <img src="./assets/Screenshot -project-Guide to my country.-Food2png.png" alt="slide7">
+        </div>
+        <div class="project-description">
+            <div class="link-cont">
+                <h4 class="lebanonproject">Guide to My Country project</h4>
+                <a href="https://guide-to-lebanon12.netlify.app/" target="_blank">
+                    <img src="./assets/link_1323734.png" alt="link" class="link">
+                </a>
+            </div>
+            <p class="descripe">A website blending HTML,CSS and JavaScript for lebanon enthusiasts.<br>
+                Embark on a journey through its breathtaking nature,explore its
+                delicious<br> traditional food,and discover the richness of its culture and heritage.</p>
+        </div>
+
+        <div class="put-new-projects">
+            <div class="new-projectcontainer">
+                <div class="card1">
+                    <img src="./assets/trinket-library-project.png" alt="library">
+                  
+                </div>
+                <div class="card2">
+                    <img src="./assets/trinket-chatbot-project.png" alt="chatbot">
+                 
+                </div>
+                <div class="card3">
+                    <img src="./assets/trinket-banksystem-project.png" alt="banksystemt">
+                 
+                </div>
+                <div class="card4">
+                    <img src="./assets/pixel-art-project.png" alt="Pixel art">
+                   
+                </div>
+                <div class="card5">
+                    <img src="./assets/cake-recipe.png" alt="Recipe">
+                   
+                </div>
+               <div class="card6">
+                <img src="./assets/card-project.png"alt="card">
+               </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
