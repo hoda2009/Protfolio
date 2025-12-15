@@ -6,12 +6,14 @@ body{
     padding: 0;
     background: #1a2033;
    
-      
-    ;
+
 
 
 
 }
+
+
+
 .background{
     background-image: url(./assets/bghomepage.png);
      background-size: cover;
@@ -24,7 +26,10 @@ body{
 nav{
     padding:46px 8px;
     z-index: 100;
+    position: fixed;
+    right: 0;
 }
+
 nav ul{
     display: flex;
     flex-direction: row;
@@ -36,6 +41,32 @@ nav ul{
     margin: 0;
     padding:0;
   
+}
+
+nav.scrolled ul li a{
+    color:gold ;/*for scrolling*/
+      background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e8a922 40%,
+                    #936916 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            color: transparent;
 }
 nav ul li a {
     text-decoration: none;
@@ -265,6 +296,7 @@ animation:goldMove 6s linear infinite;
 
         
 #quote{
+        margin-top:250px;
     position: relative;
    display: flex;
    justify-content: center;
@@ -273,7 +305,7 @@ animation:goldMove 6s linear infinite;
     padding-top:100px;
     background-color: rgba(0,0,0,0.5);
     border-radius:30px;
-    height:150px;
+    height:330px;
   
  
 }
@@ -284,9 +316,9 @@ animation:goldMove 6s linear infinite;
 }
 .quote-text{
 
-    line-height: 1.7;
+    line-height:2;
     text-align: center;
-    font-size:20px;
+    font-size:29px;
     font-family:"Momo Trust Sans", sans-serif;
     font-weight:650;
      background:linear-gradient(
@@ -302,7 +334,7 @@ animation:goldMove 6s linear infinite;
         background-clip: text;
         color:transparent;
             margin-bottom: 50px;
-        margin-bottom:100px;
+        margin-bottom:130px;
     }
 @keyframes galaxyMove{
     0%{background-position: 0% 50%;}
@@ -311,10 +343,10 @@ animation:goldMove 6s linear infinite;
 
 .quote-author{
     position: absolute;
-    bottom:-9px;
-    right:0;
+    bottom:-20px;
+    left:50%;
     transform: translateX(-50%);
-    font-size:25px;
+    font-size:35px;
     color: #6F86D6;
     font-family:'Italianno',cursive;
      font-optical-sizing: auto;
@@ -402,3 +434,841 @@ animation:goldMove 6s linear infinite;
     
 }
 
+
+ .highlight {
+            font-weight: 600;
+            color: #e6c988;
+            letter-spacing: 1px;
+
+
+        }
+
+        .glass-subtitle {
+            position: absolute;
+            top: 350px;
+            left: 490px;
+            font-size: 30px;
+            color: #f5f3f0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(218, 221, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6,
+
+                );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 0 0 12px rgba(252, 213, 87, 0.8),
+                0 0 30px rgba(240, 200, 120, 0.6);
+            animation: goldMove 6s linear infinite;
+            ;
+        }
+
+        .home-icon {
+            color: rgb(18, 16, 16);
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
+            gap: 25px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 490px;
+            left: 640px;
+        }
+
+        .home-icon a i {
+            font-size: 50px;
+            color: #d8b36b;
+        }
+
+        .home-icon a:hover {
+            transform: scale(1.2);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(218, 221, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 0 0 1px rgba(252, 213, 87, 0.8),
+                0 0 20px rgba(240, 200, 120, 0.6);
+            animation: goldMove 6s linear infinite;
+            ;
+        }
+
+
+
+        #about h2 {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 90px;
+            padding-left: 160px;
+            font-size: 60px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(221, 191, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            color: transparent;
+
+
+
+        }
+
+        #about h2 span {
+            display: inline-block;
+            border-bottom: 3px solid #d8b36b;
+            padding-bottom: 15px;
+            animation: fadeSlide 2s ease forwards;
+
+        }
+
+        .text {
+            font-family: 'Poppins', 'Arial', sans-serif;
+            padding-left: 160px;
+            padding-right: 160px;
+            line-height: 1.7;
+            font-weight: 600;
+            font-size: 25px;
+            font-family: "Inter", sans-serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(218, 221, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 0 0 1px rgba(252, 213, 87, 0.8),
+                0 0 20px rgba(240, 200, 120, 0.6);
+
+        }
+
+        .animation {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fladeslide 2s ease forwards;
+        }
+
+        @keyframes fladeslide {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+
+            }
+
+            100% {
+                opacity: 1.0;
+                transform: translateY(30px);
+            }
+        }
+
+        .skills h3 {
+
+            text-align: center;
+            margin-bottom: 80px;
+
+            padding-top: 100px;
+            font-family: 'Momo Trust Sans';
+            font-size: 35px;
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            letter-spacing: 3px;
+
+        }
+
+        .skills .container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 140px;
+            height: 180px;
+            border: 4px solid #dccf83;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background: #0B0D16 0%,
+                #1A2033 40%,
+                #242B45 70%,
+                #4B3A52 100%;
+            backdrop-filter: blur(2px);
+            box-shadow: 0 0 15px #ffd700, 0 0 25px #ffd700, 0 0 35 #f5c242;
+            position: relative;
+        }
+
+        .card img {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .card:hover {
+            transform: scale(1.2);
+            box-shadow: 4px 4px 15px rgba(218, 153, 61, 0.7);
+        }
+
+        .softskills {
+            margin-bottom: 80px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            text-align: center;
+            padding-top: 70px;
+            font-family: 'Momo Trust Sans';
+            font-size: 35px;
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            letter-spacing: 3px;
+
+        }
+
+        .card-title {
+            position: absolute;
+            top: 150px;
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            width: 90%;
+            word-wrap: break-word;
+
+
+        }
+
+        p.card-title {
+            top:145px;}
+
+
+        .softskills .new-container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        .new-card p {
+            display: flex;
+            color: white;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: italic;
+            padding-bottom:32px;
+            font-weight: 600;
+            background: linear-gradient(90deg,
+                    #4A00E0,
+                    #c4e22d,
+                    #FF6EC4,
+                    #48C6EF,
+                    #6F86D6);
+            background-size: 400% 400%;
+            animation: galaxyMove 8s ease infinite;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 50px;
+            font-size: 18px;
+        }
+
+        @keyframes galaxyMove {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .new-card {
+            width:230px;
+            height:250px;
+            border: 4px solid #dccf83;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .new-card img {
+            padding-top: 50px;
+            width: 140px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        p.time {
+            margin-top: -3px;
+            font-size:18px;
+        }
+
+        .new-card img {
+            padding-top: 70px;
+            width: 140px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        p.time1 {
+            font-size: 18px;
+            margin-top: -5px;
+        }
+
+        p.time2 {
+            font-size:18px;
+            
+        }
+
+        p.time3 {
+            font-size: 18px;
+        }
+
+        p.time5 {
+            bottom: 0;
+            font-size: 18px;
+        }
+
+        .new-card:hover {
+            transform: scale(1.2);
+            box-shadow: 4px 4px 15px rgba(218, 153, 61, 0.7);
+
+        }
+
+        #projects h2 {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 90px;
+            padding-left: 160px;
+            font-size: 60px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(221, 191, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            color: transparent;
+
+
+
+        }
+
+        #projects h2 span {
+            display: inline-block;
+            border-bottom: 3px solid #d8b36b;
+            padding-bottom: 15px;
+            animation: fadeSlide 2s ease forwards;
+            padding-top: 60px;
+
+        }
+
+        .lebanonproject {
+
+            text-align: center;
+            margin-bottom: 80px;
+
+            padding-top: 120px;
+            font-family: 'Momo Trust Sans';
+            font-size: 35px;
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            letter-spacing: 3px;
+
+
+        }
+
+
+
+.time8{
+
+    font-size:23px;
+    font-weight: 800;
+    word-wrap:break-word;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin-top:10px;
+}
+
+
+.certificate-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:40px;
+    
+}
+
+
+.certificate-container{
+    perspective: 1000px;
+}
+.certificate-card{
+    width:400px;
+    height:340px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    cursor:pointer;
+    transform: rotateY(0deg);
+
+
+     
+}
+.certificate-card:hover{
+      transform: rotateY(180deg);
+    
+}
+
+.certificate-card img{
+
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+   
+}
+
+.front ,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+
+
+}
+.back{
+    background: linear-gradient(
+        to bottom,
+        #0B0D16 0%,
+        #1A2033 40%,
+        #242B45 70%,
+        #4B3A52 100%);
+    color:gold;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+      backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+
+}
+.back span{
+ background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            letter-spacing: 3px;
+}
+.certificate-card .active{
+    transform: rotateY(180deg);
+}
+.project-card1{
+    width:200px;
+    height:150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.project-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height:1.5;
+     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), 0 0 5px rgba(221, 191, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            margin-bottom:15px;
+    
+       
+            
+}
+
+.card4{
+    margin-top:-12px;
+}
+
+
+
+
+
+.put-new-projects .new-projectcontainer{
+     display: flex;
+        padding-top:120px;
+            justify-content: center;
+            gap:100px;
+            flex-wrap: wrap;
+       
+
+}
+
+.new-projectcontainer img{
+    display: block;
+    width:370px;
+    height: 450px;
+    border-style: double;
+border:3px solid gold;border-radius: 10px;box-shadow: 2px 2px 10px rgba(0,0,0,0.1),0 0 5px rgba(221,191,21,0.5),0 0 10px rgba(255,165,0,0.5),-2px 2px 5px rgba(218,153,61,0.4);}
+ 
+
+.put-new-projects{
+    margin-top:-80px;
+}
+
+#contact h2{
+     font-family: 'Montserrat', sans-serif;
+            padding-top: 90px;
+            padding-left: 160px;
+            font-size: 60px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(221, 191, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5),
+                -2px -2px 5px rgba(218, 153, 61, 0.4);
+            background: linear-gradient(to right, #fff7d6 0%,
+                    #e6c988 40%,
+                    #d8b36b 70%,
+                    #fff7d6 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            color: transparent;
+        
+
+}
+#contact h2 span{
+      display: inline-block;
+            border-bottom: 3px solid #d8b36b;
+            padding-bottom: 15px;
+            animation: fadeSlide 2s ease forwards;
+            padding-top: 60px;
+}
+
+.text1{
+     font-family: 'Poppins', 'Arial', sans-serif;
+
+            padding-left: 160px;
+            padding-right: 160px;
+            line-height: 1.7;
+            font-weight: 700;
+            font-size:27px;
+            font-family: "Inter", sans-serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7), 0 0 5px rgba(218, 221, 21, 0.5);
+            background: linear-gradient(90deg,
+                    #fff7d6,
+                    #e6c988,
+                    #f7e9b5,
+                    #d8b36b,
+                    #fff7d6, );
+            -webkit-background-clip: text;
+            background-clip: text;
+            /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
+            -webkit-text-fill-color: rgb(215, 206, 151);
+            text-shadow: 0 0 1px rgba(252, 213, 87, 0.8),
+                0 0 20px rgba(240, 200, 120, 0.6);
+                margin-top:0px;
+
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+
+    
+}
+form{
+    
+   display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+     background-color: rgba(0,0,0,0.5);
+    width: 50vw;
+    height:400px;
+    padding-top: 20px;
+     align-items: center;
+       border-radius: 40px;
+     justify-content: center;
+}
+
+.contact-input{
+    padding:10px;
+    border-radius: 10px ;
+    font-size:13px;
+    height:32px;
+    width:350px;
+    border:3px solid #d8b36b;
+    background: linear-gradient(9to right,#fff7d6,#e6c988,#d8b36b,#fff7d6);
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+    box-shadow: 0 0 5px rgba(218,153,61,1);
+    transition: 0.3s;
+    font-weight:700;
+    
+    
+}
+
+.contact-input:focus{
+    border-color: #f4d03f;
+    box-shadow: 0 0 8px rgba(244,208,63,0.8),
+    0 0 20px rgba(218,165,32,0.6),
+    0 0 30px rgba(255,233,0,0.5);
+    outline: none;
+}
+.contact-input::placeholder,#message::placeholder{
+    color:#0872cf;
+    font-weight:600;
+}
+#message{
+     padding:20px;
+    
+    border-radius: 30px ;
+    font-size:13px;
+    height:32px;
+    width:350px;
+    border:3px solid #d8b36b;
+    background: linear-gradient(9to right,#fff7d6,#e6c988,#d8b36b,#fff7d6);
+    background-origin: border-box;
+    background-clip: padding-box,border-box;
+    box-shadow: 0 0 5px rgba(218,153,61,1);
+    transition: 0.3s;
+    
+
+}
+#message:focus{
+    
+     border-color: #f4d03f;
+    box-shadow: 0 0 8px rgba(244,208,63,0.8),
+    0 0 20px rgba(218,165,32,0.6),
+    0 0 30px rgba(255,233,0,0.5);
+    outline: none;
+}
+input.contact-input{
+    text-align: center;
+}
+textarea#message{
+    text-align: center;
+  
+}
+button{
+    font-size:15px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding:14px 20px;
+    font-weight:600;
+    color:#000;
+    background: linear-gradient(to right,#e6c988,#d8b36b,#f7e9b5,#e6c988);
+    transition: all 0.3s ease;
+    
+}
+button:hover{
+    transform: scale(1.07);
+    box-shadow: 0 0 12px rgba(244,208,63,1),
+    0 0 25px rgba(218,165,32,0.8),
+    0 0 35px rgba(255,223,0,0.6);
+    
+}
+
+.footer{
+    
+    background: linear-gradient(to top,#f7e9b5,#f4d03f,#d8b36b);
+    text-align: center;
+    margin-top:150px;
+    padding: 15px 0;
+}
+.footer p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 19px;
+font-weight: 600;
+}
+
+
+.direction{
+    display: flex;
+    align-items: flex-start;
+    gap:10px;
+flex-wrap: wrap;}
+
+.contact-text{
+    flex:2;
+    min-width:600px;
+}
+
+
+.contact-container{
+margin-right:160px;
+
+width:650px;
+flex: 1;
+}
+
+.flip-card{
+    cursor: pointer;
+}
+.flip-card:hover{
+      transform: rotateY(180deg);
+}
