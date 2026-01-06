@@ -4,7 +4,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background: #1a2033;
+    background-color: #1a2033;
    
 
 
@@ -1271,4 +1271,15 @@ flex: 1;
 }
 .flip-card:hover{
       transform: rotateY(180deg);
+}
+
+#preloader{
+    position:fixed;
+    background-image:url("./assets/preloader1.gif");
+    width: 100vw;
+    height:100vh;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

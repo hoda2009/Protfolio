@@ -10,3 +10,10 @@ function nav(){
     }
 
 }
+const loader=document.getElementById("preloader")
+window.addEventListener("load",hidePreLoader);
+function hidePreLoader(){
+    loader.style.display="none";
+    
+
+}
