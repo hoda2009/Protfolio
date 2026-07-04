@@ -554,7 +554,7 @@ animation:goldMove 6s linear infinite;
             font-family: 'Poppins', 'Arial', sans-serif;
             padding-left: 160px;
             padding-right: 160px;
-            line-height: 1.7;
+            line-height: 1.8;
             font-weight: 600;
             font-size: 25px;
             font-family: "Inter", sans-serif;
@@ -959,6 +959,7 @@ animation:goldMove 6s linear infinite;
         #4B3A52 100%);
     color:gold;
     font-size: 22px;
+     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     display: flex;
       backface-visibility: hidden;
@@ -990,6 +991,7 @@ animation:goldMove 6s linear infinite;
             -webkit-text-fill-color: transparent;
             color: transparent;
             letter-spacing: 3px;
+             font-family: 'Montserrat', sans-serif;
 }
 .certificate-card .active{
     transform: rotateY(180deg);
